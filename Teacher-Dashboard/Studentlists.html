@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+    <meta name="" content="">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="/assets/css/Bootstrap-Calendar.css">
+    <link rel="stylesheet" href="/assets/css/Contact-form-simple.css">
+    <link rel="stylesheet" href="/assets/css/x-dropdown.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+      <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0"
+      style="background-color: rgb(0,0,0);color: rgb(253,254,255);">
+      <div class="container-fluid d-flex flex-column p-0">
+          <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+              <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-book-open"></i></div>
+              <div class="sidebar-brand-text mx-3"><span>WESFA</span></div>
+          </a>
+          <hr class="sidebar-divider my-0">
+          <ul class="nav navbar-nav text-light" id="accordionSidebar">
+              <li class="nav-item" role="presentation"><a class="nav-link" href="home.html"><i
+                          class="fas fa-home"></i><span>Home</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="academicCalender.html"><i
+                          class="fas fa-calendar-week"></i><span>&nbsp;Academic Calender</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="attendance.html"><i
+                          class="fas fa-calendar-week"></i><span>&nbsp;Attendance</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="TimeTable.html"><i
+                          class="fas fa-calendar-week"></i><span>&nbsp;Time Table</span></a></li>
+                          <li class="nav-item" role="presentation"><a class="nav-link" href="mysubjects.html"><i
+                              class="fas fa-calendar-week"></i><span>&nbsp;My Subjects</span></a></li>
+            
+              <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" href="#examination" aria-expanded="false"
+                      aria-controls="examination">
+                      <i class="fas fa-chalkboard-teacher"></i>
+                      <span class="menu-title">Assignment</span>
+                      <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="examination">
+                      <ul class="nav flex-column sub-menu">
+                          <li class="nav-item">
+                              <a class="nav-link" href="uploadassignment.html">Upload Assignment</a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="Studentlists.html">Students List</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+
+              <li class="nav-item" role="presentation"><a class="nav-link" href="examresult.html"><i
+                  class="fas fa-calendar-week"></i><span>&nbsp;Exam Result</span></a></li>
+              
+              <li class="nav-item" role="presentation"><a class="nav-link" href="studentassessment.html"><i
+                      class="fas fa-calendar-week"></i><span>&nbsp;Student Assessment</span></a></li>
+
+              <li class="nav-item" role="presentation"><a class="nav-link" href="studymaterial.html"><i
+                      class="fas fa-calendar-week"></i><span>&nbsp;Study Material</span></a></li>
+
+              <li class="nav-item" role="presentation"><a class="nav-link" href="SuggestionBox.html"><i
+                      class="fas fa-calendar-week"></i><span>&nbsp;Suggestion Box</span></a></li>
+
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i
+                      class="fas fa-calendar-week"></i><span>&nbsp;Logout</span></a></li>
+  
+          </ul>
+          <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0"
+                  id="sidebarToggle" type="button"></button></div>
+      </div>
+  </nav>
+  <div class="d-flex flex-column" id="content-wrapper">
+    <div id="content">
+      <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+        <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3"
+                id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+
+            <div>
+                <h6><b> Teacher Dashboard </b></h6>
+            </div>
+            <ul class="nav navbar-nav flex-nowrap ml-auto">
+                <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                    <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
+                            data-toggle="dropdown" aria-expanded="false" href="#"><span
+                                class="badge badge-danger badge-counter">3+</span><i
+                                class="fas fa-bell fa-fw"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                            role="menu">
+                            <h6 class="dropdown-header">alerts center</h6>
+                            <a class="d-flex align-items-center dropdown-item" href="#">
+                                <div class="mr-3">
+                                    <div class="bg-primary icon-circle"><i
+                                            class="fas fa-file-alt text-white"></i></div>
+                                </div>
+                                <div><span class="small text-gray-500">December 12, 2019</span>
+                                    <p>A new monthly report is ready to download!</p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center dropdown-item" href="#">
+                                <div class="mr-3">
+                                    <div class="bg-success icon-circle"><i
+                                            class="fas fa-donate text-white"></i></div>
+                                </div>
+                                <div><span class="small text-gray-500">December 7, 2019</span>
+                                    <p>$290.29 has been deposited into your account!</p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center dropdown-item" href="#">
+                                <div class="mr-3">
+                                    <div class="bg-warning icon-circle"><i
+                                            class="fas fa-exclamation-triangle text-white"></i></div>
+                                </div>
+                                <div><span class="small text-gray-500">December 2, 2019</span>
+                                    <p>Spending Alert: We've noticed unusually high spending for your
+                                        account.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                
+                <div class="d-none d-sm-block topbar-divider"></div>
+                <li class="nav-item dropdown no-arrow" role="presentation">
+                    <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
+                            data-toggle="dropdown" aria-expanded="false" href="#"><span
+                                class="d-none d-lg-inline mr-2 text-gray-600 small">Devanshu
+                                Trivedi</span><img class="border rounded-circle img-profile"
+                                src="/assets/img/avatars/avatar1.jpeg"></a>
+                        <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
+                            <a class="dropdown-item" role="presentation" href="profile.html"><i
+                                    class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation"
+                                href="#"><i
+                                    class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+        <div class="container-fluid">
+            <style>
+                 * {box-sizing: border-box}
+                        
+                        /* Set height of body and the document to 100% */
+                        body, html {
+                          height: 100%;
+                          margin: 0;
+                          font-family: Arial;
+                        }
+            
+                /* Style tab links */
+                .tablink {
+                  
+                  background-color: #4e73df;
+                  color: black;
+                  float: left;
+                  border-left: 1px;
+                  outline: none;
+                  cursor: pointer;
+                  padding: 14px 16px;
+                  font-size: 17px;
+                  width: 33.33%;
+                }
+                
+            
+                
+                /* Style the tab content (and add height:100% for full page content) */
+                .tabcontent {
+                  color: black;
+                  display: none;
+                  padding: 100px 20px;
+                  height: 100%;
+                }
+                
+                
+                
+                </style>
+            
+                <button class="tablink" onclick="openPage('Home', this)" id="defaultOpen" >2nd Year</button>
+                <button class="tablink" onclick="openPage('News', this)" >3rd Year</button>
+                <button class="tablink" onclick="openPage('Contact', this)">4th Year</button>
+                
+                
+                <div id="Home" class="tabcontent">
+        
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-12">
+                                <div id="accordion">
+                                    <style>
+                                        .card-header{background-color:#4e73df;}
+                                        
+                                    </style>
+            
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="card-link text-light" data-toggle="collapse" href="#collapseOne">
+                                          Assignment 1
+                                        </a>
+                                      </div>
+                                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                          
+                                            <table class="table" id="myTable1">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>     
+            
+            
+            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="collapsed card-link text-light" data-toggle="collapse" href="#collapseTwo">
+                                            Assignment 2
+                                        </a>
+                                      </div>
+                                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table class="table" id="myTable2">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+                                            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="collapsed card-link text-light" data-toggle="collapse" href="#collapseThree">
+                                            Assignment 3
+                                        </a>
+                                      </div>
+                                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                          
+                                            <table class="table" id="myTable3">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+                        
+            
+                            </div>
+                        </div>
+            
+                    </div>
+        
+                </div>
+                
+                <div id="News" class="tabcontent">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-12">
+                                <div id="accordion">
+                                    <style>
+                                        .card-header{background-color:#4e73df;}
+                                        
+                                    </style>
+            
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="card-link text-light" data-toggle="collapse" href="#collapseOne">
+                                          Assignment 1
+                                        </a>
+                                      </div>
+                                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                          
+                                            <table class="table" id="myTable1">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>     
+            
+            
+            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="collapsed card-link text-light" data-toggle="collapse" href="#collapseTwo">
+                                            Assignment 2
+                                        </a>
+                                      </div>
+                                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table class="table" id="myTable2">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+                                            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="collapsed card-link text-light" data-toggle="collapse" href="#collapseThree">
+                                            Assignment 3
+                                        </a>
+                                      </div>
+                                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                          
+                                            <table class="table" id="myTable3">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+                        
+            
+                            </div>
+                        </div>
+            
+                    </div>
+                                        
+                </div>
+                
+                <div id="Contact" class="tabcontent">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-12">
+                                <div id="accordion">
+                                    <style>
+                                        .card-header{background-color:#4e73df;}
+                                        
+                                    </style>
+            
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="card-link text-light" data-toggle="collapse" href="#collapseOne">
+                                          Assignment 1
+                                        </a>
+                                      </div>
+                                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                          
+                                            <table class="table" id="myTable1">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>     
+            
+            
+            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="collapsed card-link text-light" data-toggle="collapse" href="#collapseTwo">
+                                            Assignment 2
+                                        </a>
+                                      </div>
+                                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table class="table" id="myTable2">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+                                            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <a class="collapsed card-link text-light" data-toggle="collapse" href="#collapseThree">
+                                            Assignment 3
+                                        </a>
+                                      </div>
+                                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                          
+                                            <table class="table" id="myTable3">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Student Name</th>
+                                                    <th>Student Roll Number</th>
+                                                    <th>Submission Date</th>
+                                                    <th>Due Date</th>
+                                                    <th>Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Firstname Secondname</td>
+                                                    <td>1713213000</td>
+                                                    <td>23/03/2021</td>
+                                                    <td>27/03/2021</td>
+                                                    <td>Submitted</td>
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+            
+            
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+                        
+            
+                            </div>
+                        </div>
+            
+                    </div>
+        
+                   
+                </div>
+                
+                
+                
+                <script>
+                function openPage(pageName,elmnt,color) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablink");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                  }
+                  document.getElementById(pageName).style.display = "block";
+                  elmnt.style.backgroundColor = color;
+                }
+                
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+                </script>
+        
+        </div>
+
+
+
+    </div>
+
+
+    
+    <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Devanshu, Nandini, Neha, Aman © WESFA 2021</span>
+            </div>
+        </div>
+    </footer>
+</div>
+<a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/assets/js/theme.js"></script>
+    <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+        $('#myTable1').DataTable();
+        });
+    </script>
+    <script>
+        $(document).ready( function () {
+        $('#myTable2').DataTable();
+        });
+    </script>
+    <script>
+        $(document).ready( function () {
+        $('#myTable3').DataTable();
+        });
+    </script>
+</body>
+
+</html>

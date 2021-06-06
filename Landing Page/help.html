@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Products - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Contact-form-simple.css">
+    <link rel="stylesheet" href="assets/css/Responsive-feedback-form-1.css">
+    <link rel="stylesheet" href="assets/css/Responsive-feedback-form.css">
+</head>
+
+<body style="background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/bg.jpg');background-image: url(&quot;assets/img/Blue-Code-Website-Backgrounds.jpg&quot;);">
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3"><strong>WHERE EVERY STUDENT TO FACULTY CAN ACCESS&nbsp;</strong><br></span><span class="site-heading-lower">WESFA</span></h1>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav" style="background-color: rgb(210,177,3);background-image: url(&quot;assets/img/images.jpg&quot;);">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#" style="color: rgb(0,0,0);">Wesfa</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="help.html">Help</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg"  href="#" data-toggle="modal" data-target="#LoginModal" style="color: rgb(255,255,255);">Login</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link shadow-lg"  href="#" data-toggle="modal" data-target="#RegisterModal" style="color: rgb(255,255,255);">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Login Modal-->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="/action_page.php">
+                    
+                    <div class="row">
+                        <div class="col"><select class="form-control">
+                                <option>Students</option>
+                                <option>Faculty</option>
+                                <option>HOD</option>
+                                <option>Placement Co-ordinator</option>
+                            </select></div>
+                    </div><br/>
+
+                    <div class="form-group">
+                      <label for="uname">Username:</label>
+                      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <div class="d-flex justify-content-center links">
+                            Registered?<a href="#">Register</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                            <a href="#">Forgot your password?</a>
+                    </div>
+                
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Register Modal-->
+    <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Student Register</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="/action_page.php" class="was-validated">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phn">Phone Number:</label>
+                        <input type="text" class="form-control" id="phn" placeholder="Enter Phone Number" name="phn" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" placeholder="Enter Date of Birth" name="dob" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email Id:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email Id" name="email" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="fname">Father Name:</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Enter Father Name" name="fname" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="fphn">Father Phone Number:</label>
+                        <input type="text" class="form-control" id="fphn" placeholder="Enter Father Phone Number" name="fphn" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                    <div class="form-group">
+                      <label for="cid">Username/College Id:</label>
+                      <input type="text" class="form-control" id="cid" placeholder="Enter Username/College Id" name="cid" required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="cid">University Roll Number:</label>
+                      <input type="text" class="form-control" id="urno" placeholder="Enter University Roll Number" name="urno" required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pswd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pwd" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpswd">Confirm Password:</label>
+                        <input type="password" class="form-control" id="cpwd" placeholder="Confirm Password" name="cpwd" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="access">Access Code:</label>
+                        <input type="text" class="form-control" id="accesscd" placeholder="Access Code" name="accesscd" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card-group" style="margin-top: 70px;">
+        <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/products-01.jpg">
+            <div class="card-body">
+                <h4 class="text-center card-title">Devanshu Trivedi</h4>
+                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+        </div>
+        <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/products-01.jpg">
+            <div class="card-body">
+                <h4 class="text-center card-title">Nandini Sharma</h4>
+                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+        </div>
+        <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/products-01.jpg">
+            <div class="card-body">
+                <h4 class="text-center card-title">Neha Kumari</h4>
+                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+        </div>
+        <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/products-01.jpg">
+            <div class="card-body">
+                <h4 class="text-center card-title">Aman Chandra Verma</h4>
+                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:51px;">
+        <div id="form-div" style="margin-right:50px;margin-left:50px;">
+            <form method="post">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-12">
+                            <h1 class="text-center" style="font-family: Armata, sans-serif;font-size: 30px;margin-top: 18px;"><strong>Feedback Form</strong></h1>
+                        </div>
+                    </div>
+                    <hr id="hr" style="background-color: #c3bfbf;margin-top: -5px;">
+                    <div class="form-row">
+                        <div class="col-10 col-sm-10 col-md-8 offset-1 offset-sm-1 offset-md-2">
+                            <p style="font-family:Armata, sans-serif;font-size:22px;"><strong>Name</strong></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-10 col-sm-10 col-md-8 offset-1 offset-sm-1 offset-md-2"><input class="form-control" type="email" style="font-size:15px;font-family:Armata, sans-serif;" name="email"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-10 col-sm-10 col-md-8 offset-1 offset-sm-1 offset-md-2">
+                            <p style="font-family:Armata, sans-serif;font-size:22px;"><strong>Email id</strong></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-10 col-sm-10 col-md-8 offset-1 offset-sm-1 offset-md-2"><input class="form-control" type="email" style="font-size:15px;font-family:Armata, sans-serif;" name="email"></div>
+                    </div>
+                    <div class="form-row" style="font-family:Armata, sans-serif;margin-top:10px;">
+                        <div class="col-10 col-sm-10 col-md-8 offset-1 offset-sm-1 offset-md-2">
+                            <p style="font-family:Armata, sans-serif;font-size:22px;"><strong>Feedback </strong></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-10 col-sm-10 col-md-8 offset-1 offset-sm-1 offset-md-2"><textarea class="form-control" style="font-family:Armata, sans-serif;font-size:15px;" name="feedback" maxlength="250" rows="7"></textarea></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-10 col-sm-10 col-md-8 offset-1 offset-sm-1 offset-md-2">
+                            <p class="text-right" style="font-family:Armata, sans-serif;">Max length 250 characters</p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-9 col-sm-5 col-md-4 offset-1 offset-sm-4 offset-md-5"><button class="btn btn-warning" style="font-family:Armata, sans-serif;font-size:14px;color:rgb(0,0,0);" type="reset">Reset </button><button class="btn btn-success" id="submit-btn" style="font-family:Armata, sans-serif;font-size:14px;color:rgb(0,0,0);"
+                                type="submit">Submit </button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="d-flex product-item-title"></div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="d-flex product-item-title"></div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="d-flex product-item-title"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-faded text-center py-5" style="background-image: url(&quot;assets/img/images.jpg&quot;);">
+        <div class="container">
+            <p class="m-0 small" style="color: rgb(0,0,0);font-size: 14px;">Developed by Devanshu,Nandini,Neha and Aman © WESFA (Major Project)</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/current-day.js"></script>
+</body>
+
+</html>
